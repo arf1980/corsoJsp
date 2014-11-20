@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding= "ISO-8859-1" ?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+"http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+<taglib>
+	<tlibversion>1.0</tlibversion>
+	<jspversion>1.1</jspversion>
+	<shortname>myTags</shortname>
+	<info>My first Custom Tag</info>
+	<tag>
+		<name>mySelect</name>
+		<tagclass>com.lenzi.fra.corsoJsp.tags.TagSelect</tagclass>
+		<bodycontent>empty</bodycontent>
+		<info>Tag used to define selection</info>
+		<attribute>
+			<name>selectName</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<name>className</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<name>list</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>
